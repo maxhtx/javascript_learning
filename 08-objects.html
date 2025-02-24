@@ -13,6 +13,7 @@
 
     <script>
 
+        /*
         const product = {
             name: 'socks', 
             price: 1090
@@ -36,6 +37,29 @@
         const jsonString = JSON.stringify(product)
 
         console.log(JSON.parse(jsonString));
+        */
+
+        console.log('hello'.toUpperCase());
+
+        const object1 = {
+            message: 'Hello'
+        };
+
+        object1.message = 'Good Job';
+
+        console.log(object1);
+
+        const object3 = {
+            message: 'Good Job'
+        };
+
+        console.log(object3.message === object1.message);
+
+        const { message } = object4;
+
+        const object5 = {
+            message: message
+        };
 
 
     </script>
