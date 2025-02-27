@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced Functions</title>
+    </head>
+
+    <style>
+
+
+    </style>
+
+    <body>
+
+
+        <script>
+ 
+            const num = 2;
+
+            const function1 = function() {
+                console.log('Hello2');
+            }
+
+            // Function Saved in an Object
+            const object1 = {
+                num: 2,
+                fun: function greeting() {
+                    console.log('Hello3');
+                }
+            };
+            object1.fun();
+
+
+            // Functions include parameters
+            function display(message) {
+                console.log(message);
+            }
+
+            display('hello!');
+
+
+            // Passing a function into a function. Callback
+            function run(func) {
+                func();
+
+            }
+            run(function() {
+                console.log('Hello4');
+            })
+
+            //Set time for a function to run in the future
+            setTimeout(function() {
+                console.log('Hello5');
+            }, 3000)
+
+            //Asyncronous Code
+            console.log('Next line');
+
+            //Run function every 3000 milliseconds
+            setInterval(function() {
+                console.log('Hello6');
+            }, 3000)
+
+            console.log('Last line');
+
+        </script>
+    </body>
+</html>
