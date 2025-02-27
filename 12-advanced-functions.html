@@ -11,9 +11,21 @@
 
     <body>
 
+        <button class = "js-button"onclick = "">Click Me</button>
+
 
         <script>
  
+            const buttonElement = document.querySelector(".js-button")
+
+            buttonElement.addEventListener('click', () => console.log('Click'));
+            
+            const eventListener = () => console.log('Click2');
+
+            buttonElement.addEventListener('click', eventListener);
+            buttonElement.removeEventListener('click', eventListener);
+
+            /*
             const num = 2;
 
             const function1 = function() {
@@ -61,7 +73,47 @@
             }, 3000)
 
             console.log('Last line');
+            
+            
 
+
+            //For Each Functions
+            [
+                'make dinner',
+                'wash dishes',
+                'do homework'
+            ].forEach((value, index) => {
+                //Same as continue in a for loop
+                if (value === 'wash dishes') {
+                    return;
+                }
+
+                console.log(index, value);
+            });
+            
+            //Arrow Functions
+            const addOne = number => {
+                console.log(number + 1)};
+            
+            addOne(7);
+
+            //One Line Arrow Function
+            const oneLine = () => 2 + 3
+            
+            console.log(oneLine());
+
+            //Arrow Function inside object, shorthand method
+            const object = {
+                method: () {
+                    
+                }
+            }
+            */
+
+
+
+
+            
         </script>
     </body>
 </html>
